@@ -1,0 +1,57 @@
+== Task 1(b): gradient check ==
+                                       model param       shape  rel_err_autograd  allclose_autograd  n_fd_entries   rel_err_fd  allclose_fd
+                     tiny-relu (all entries)    W1    [20, 16]      0.000000e+00               True           320 6.947533e-10         True
+                     tiny-relu (all entries)    b1        [16]      0.000000e+00               True            16 5.734793e-10         True
+                     tiny-relu (all entries)    W2    [16, 12]      0.000000e+00               True           192 3.267270e-10         True
+                     tiny-relu (all entries)    b2        [12]      0.000000e+00               True            12 3.294112e-10         True
+                     tiny-relu (all entries)    W3    [12, 10]      0.000000e+00               True           120 3.181712e-10         True
+                     tiny-relu (all entries)    b3        [10]      0.000000e+00               True            10 3.306505e-10         True
+                  tiny-sigmoid (all entries)    W1    [20, 16]      9.182964e-17               True           320 1.626745e-08         True
+                  tiny-sigmoid (all entries)    b1        [16]      6.811988e-17               True            16 1.166093e-08         True
+                  tiny-sigmoid (all entries)    W2    [16, 12]      6.725960e-17               True           192 4.832691e-09         True
+                  tiny-sigmoid (all entries)    b2        [12]      5.492720e-17               True            12 2.399027e-09         True
+                  tiny-sigmoid (all entries)    W3    [12, 10]      0.000000e+00               True           120 1.015803e-09         True
+                  tiny-sigmoid (all entries)    b3        [10]      0.000000e+00               True            10 5.123504e-10         True
+cifar-relu (40 random entries/tensor for FD)    W1 [3072, 128]      0.000000e+00               True            40 3.648578e-09         True
+cifar-relu (40 random entries/tensor for FD)    b1       [128]      0.000000e+00               True            40 3.316328e-09         True
+cifar-relu (40 random entries/tensor for FD)    W2   [128, 64]      0.000000e+00               True            40 1.474476e-09         True
+cifar-relu (40 random entries/tensor for FD)    b2        [64]      0.000000e+00               True            40 1.755745e-09         True
+cifar-relu (40 random entries/tensor for FD)    W3    [64, 10]      0.000000e+00               True            40 8.264620e-10         True
+cifar-relu (40 random entries/tensor for FD)    b3        [10]      0.000000e+00               True            10 5.320908e-10         True
+== Task 1(c): SGD training ==
+ep  1 train_loss 1.7457 val_loss 1.6449 val_acc 0.4218
+ep  2 train_loss 1.4782 val_loss 1.5462 val_acc 0.4620
+ep  3 train_loss 1.3573 val_loss 1.5247 val_acc 0.4680
+ep  4 train_loss 1.2686 val_loss 1.5015 val_acc 0.4836
+ep  5 train_loss 1.1896 val_loss 1.4841 val_acc 0.4888
+ep  6 train_loss 1.1236 val_loss 1.4547 val_acc 0.5066
+ep  7 train_loss 1.0597 val_loss 1.4769 val_acc 0.5058
+ep  8 train_loss 1.0035 val_loss 1.4956 val_acc 0.4962
+ep  9 train_loss 0.9479 val_loss 1.4939 val_acc 0.5036
+ep 10 train_loss 0.8949 val_loss 1.5023 val_acc 0.5068
+ep 11 train_loss 0.8450 val_loss 1.5172 val_acc 0.4982
+ep 12 train_loss 0.7916 val_loss 1.5465 val_acc 0.5026
+ep 13 train_loss 0.7440 val_loss 1.5939 val_acc 0.5042
+ep 14 train_loss 0.7006 val_loss 1.6209 val_acc 0.4896
+ep 15 train_loss 0.6546 val_loss 1.5849 val_acc 0.5044
+ep 16 train_loss 0.6145 val_loss 1.7792 val_acc 0.4750
+ep 17 train_loss 0.5749 val_loss 1.6834 val_acc 0.5080
+ep 18 train_loss 0.5344 val_loss 1.6677 val_acc 0.5120
+ep 19 train_loss 0.5008 val_loss 1.7129 val_acc 0.5102
+ep 20 train_loss 0.4633 val_loss 1.7773 val_acc 0.5004
+ep 21 train_loss 0.4349 val_loss 1.7882 val_acc 0.4994
+ep 22 train_loss 0.3941 val_loss 1.8876 val_acc 0.4960
+ep 23 train_loss 0.3676 val_loss 1.8606 val_acc 0.5020
+ep 24 train_loss 0.3306 val_loss 1.8824 val_acc 0.5098
+ep 25 train_loss 0.3056 val_loss 1.8870 val_acc 0.5108
+ep 26 train_loss 0.2826 val_loss 2.0924 val_acc 0.4786
+ep 27 train_loss 0.2624 val_loss 1.9903 val_acc 0.5066
+ep 28 train_loss 0.2391 val_loss 2.0750 val_acc 0.5008
+ep 29 train_loss 0.2179 val_loss 2.0488 val_acc 0.5150
+ep 30 train_loss 0.1953 val_loss 2.1461 val_acc 0.5026
+== Task 1(d): per-layer gradient norms ==
+sigmoid (Xavier init) ['1.20e-05', '2.21e-05', '9.35e-05', '3.94e-04', '1.63e-03', '6.96e-03', '2.99e-02', '1.27e-01', '5.40e-01', '1.65e+00']
+ReLU (Kaiming init) ['4.23e+00', '1.89e+00', '2.51e+00', '2.90e+00', '3.39e+00', '4.05e+00', '4.20e+00', '4.61e+00', '4.92e+00', '5.47e+00']
+sigmoid (Kaiming init) ['1.30e-04', '1.80e-04', '5.80e-04', '1.82e-03', '5.55e-03', '1.77e-02', '5.64e-02', '1.79e-01', '5.59e-01', '1.77e+00']
+ReLU (Xavier init) ['1.56e-01', '6.36e-02', '6.54e-02', '6.67e-02', '6.97e-02', '6.67e-02', '6.29e-02', '6.06e-02', '5.67e-02', '3.98e-02']
+Task 1 done -> results/task1

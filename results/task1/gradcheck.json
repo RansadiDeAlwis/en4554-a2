@@ -1,0 +1,227 @@
+[
+  {
+    "model": "tiny-relu (all entries)",
+    "param": "W1",
+    "shape": [
+      20,
+      16
+    ],
+    "rel_err_autograd": 0.0,
+    "allclose_autograd": true,
+    "n_fd_entries": 320,
+    "rel_err_fd": 6.947533463944616e-10,
+    "allclose_fd": true
+  },
+  {
+    "model": "tiny-relu (all entries)",
+    "param": "b1",
+    "shape": [
+      16
+    ],
+    "rel_err_autograd": 0.0,
+    "allclose_autograd": true,
+    "n_fd_entries": 16,
+    "rel_err_fd": 5.734793259349225e-10,
+    "allclose_fd": true
+  },
+  {
+    "model": "tiny-relu (all entries)",
+    "param": "W2",
+    "shape": [
+      16,
+      12
+    ],
+    "rel_err_autograd": 0.0,
+    "allclose_autograd": true,
+    "n_fd_entries": 192,
+    "rel_err_fd": 3.267269686166743e-10,
+    "allclose_fd": true
+  },
+  {
+    "model": "tiny-relu (all entries)",
+    "param": "b2",
+    "shape": [
+      12
+    ],
+    "rel_err_autograd": 0.0,
+    "allclose_autograd": true,
+    "n_fd_entries": 12,
+    "rel_err_fd": 3.294111522214787e-10,
+    "allclose_fd": true
+  },
+  {
+    "model": "tiny-relu (all entries)",
+    "param": "W3",
+    "shape": [
+      12,
+      10
+    ],
+    "rel_err_autograd": 0.0,
+    "allclose_autograd": true,
+    "n_fd_entries": 120,
+    "rel_err_fd": 3.181711545071347e-10,
+    "allclose_fd": true
+  },
+  {
+    "model": "tiny-relu (all entries)",
+    "param": "b3",
+    "shape": [
+      10
+    ],
+    "rel_err_autograd": 0.0,
+    "allclose_autograd": true,
+    "n_fd_entries": 10,
+    "rel_err_fd": 3.3065050352150204e-10,
+    "allclose_fd": true
+  },
+  {
+    "model": "tiny-sigmoid (all entries)",
+    "param": "W1",
+    "shape": [
+      20,
+      16
+    ],
+    "rel_err_autograd": 9.182964176361117e-17,
+    "allclose_autograd": true,
+    "n_fd_entries": 320,
+    "rel_err_fd": 1.6267448185451574e-08,
+    "allclose_fd": true
+  },
+  {
+    "model": "tiny-sigmoid (all entries)",
+    "param": "b1",
+    "shape": [
+      16
+    ],
+    "rel_err_autograd": 6.81198836432592e-17,
+    "allclose_autograd": true,
+    "n_fd_entries": 16,
+    "rel_err_fd": 1.1660926821738701e-08,
+    "allclose_fd": true
+  },
+  {
+    "model": "tiny-sigmoid (all entries)",
+    "param": "W2",
+    "shape": [
+      16,
+      12
+    ],
+    "rel_err_autograd": 6.725959842419597e-17,
+    "allclose_autograd": true,
+    "n_fd_entries": 192,
+    "rel_err_fd": 4.832690939109279e-09,
+    "allclose_fd": true
+  },
+  {
+    "model": "tiny-sigmoid (all entries)",
+    "param": "b2",
+    "shape": [
+      12
+    ],
+    "rel_err_autograd": 5.4927197937963445e-17,
+    "allclose_autograd": true,
+    "n_fd_entries": 12,
+    "rel_err_fd": 2.3990270506479045e-09,
+    "allclose_fd": true
+  },
+  {
+    "model": "tiny-sigmoid (all entries)",
+    "param": "W3",
+    "shape": [
+      12,
+      10
+    ],
+    "rel_err_autograd": 0.0,
+    "allclose_autograd": true,
+    "n_fd_entries": 120,
+    "rel_err_fd": 1.015803435863132e-09,
+    "allclose_fd": true
+  },
+  {
+    "model": "tiny-sigmoid (all entries)",
+    "param": "b3",
+    "shape": [
+      10
+    ],
+    "rel_err_autograd": 0.0,
+    "allclose_autograd": true,
+    "n_fd_entries": 10,
+    "rel_err_fd": 5.123504019901958e-10,
+    "allclose_fd": true
+  },
+  {
+    "model": "cifar-relu (40 random entries/tensor for FD)",
+    "param": "W1",
+    "shape": [
+      3072,
+      128
+    ],
+    "rel_err_autograd": 0.0,
+    "allclose_autograd": true,
+    "n_fd_entries": 40,
+    "rel_err_fd": 3.6485780951204e-09,
+    "allclose_fd": true
+  },
+  {
+    "model": "cifar-relu (40 random entries/tensor for FD)",
+    "param": "b1",
+    "shape": [
+      128
+    ],
+    "rel_err_autograd": 0.0,
+    "allclose_autograd": true,
+    "n_fd_entries": 40,
+    "rel_err_fd": 3.3163280637107756e-09,
+    "allclose_fd": true
+  },
+  {
+    "model": "cifar-relu (40 random entries/tensor for FD)",
+    "param": "W2",
+    "shape": [
+      128,
+      64
+    ],
+    "rel_err_autograd": 0.0,
+    "allclose_autograd": true,
+    "n_fd_entries": 40,
+    "rel_err_fd": 1.4744757563473602e-09,
+    "allclose_fd": true
+  },
+  {
+    "model": "cifar-relu (40 random entries/tensor for FD)",
+    "param": "b2",
+    "shape": [
+      64
+    ],
+    "rel_err_autograd": 0.0,
+    "allclose_autograd": true,
+    "n_fd_entries": 40,
+    "rel_err_fd": 1.7557449510022585e-09,
+    "allclose_fd": true
+  },
+  {
+    "model": "cifar-relu (40 random entries/tensor for FD)",
+    "param": "W3",
+    "shape": [
+      64,
+      10
+    ],
+    "rel_err_autograd": 0.0,
+    "allclose_autograd": true,
+    "n_fd_entries": 40,
+    "rel_err_fd": 8.264620483526391e-10,
+    "allclose_fd": true
+  },
+  {
+    "model": "cifar-relu (40 random entries/tensor for FD)",
+    "param": "b3",
+    "shape": [
+      10
+    ],
+    "rel_err_autograd": 0.0,
+    "allclose_autograd": true,
+    "n_fd_entries": 10,
+    "rel_err_fd": 5.320907924511847e-10,
+    "allclose_fd": true
+  }
+]

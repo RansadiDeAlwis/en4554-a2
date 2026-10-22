@@ -1,0 +1,19 @@
+model,param,shape,rel_err_autograd,allclose_autograd,n_fd_entries,rel_err_fd,allclose_fd
+tiny-relu (all entries),W1,"[20, 16]",0.0,True,320,6.947533463944616e-10,True
+tiny-relu (all entries),b1,[16],0.0,True,16,5.734793259349225e-10,True
+tiny-relu (all entries),W2,"[16, 12]",0.0,True,192,3.267269686166743e-10,True
+tiny-relu (all entries),b2,[12],0.0,True,12,3.294111522214787e-10,True
+tiny-relu (all entries),W3,"[12, 10]",0.0,True,120,3.181711545071347e-10,True
+tiny-relu (all entries),b3,[10],0.0,True,10,3.3065050352150204e-10,True
+tiny-sigmoid (all entries),W1,"[20, 16]",9.182964176361117e-17,True,320,1.6267448185451574e-08,True
+tiny-sigmoid (all entries),b1,[16],6.81198836432592e-17,True,16,1.1660926821738701e-08,True
+tiny-sigmoid (all entries),W2,"[16, 12]",6.725959842419597e-17,True,192,4.832690939109279e-09,True
+tiny-sigmoid (all entries),b2,[12],5.4927197937963445e-17,True,12,2.3990270506479045e-09,True
+tiny-sigmoid (all entries),W3,"[12, 10]",0.0,True,120,1.015803435863132e-09,True
+tiny-sigmoid (all entries),b3,[10],0.0,True,10,5.123504019901958e-10,True
+cifar-relu (40 random entries/tensor for FD),W1,"[3072, 128]",0.0,True,40,3.6485780951204e-09,True
+cifar-relu (40 random entries/tensor for FD),b1,[128],0.0,True,40,3.3163280637107756e-09,True
+cifar-relu (40 random entries/tensor for FD),W2,"[128, 64]",0.0,True,40,1.4744757563473602e-09,True
+cifar-relu (40 random entries/tensor for FD),b2,[64],0.0,True,40,1.7557449510022585e-09,True
+cifar-relu (40 random entries/tensor for FD),W3,"[64, 10]",0.0,True,40,8.264620483526391e-10,True
+cifar-relu (40 random entries/tensor for FD),b3,[10],0.0,True,10,5.320907924511847e-10,True
