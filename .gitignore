@@ -1,0 +1,5 @@
+results_quick/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+en4554_a2.zip
