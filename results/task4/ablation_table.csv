@@ -1,0 +1,8 @@
+run,params,final_val_acc,delta_vs_full,minutes
+flip_crop_only,483424,0.9112,0.002,0.6
+no_label_smoothing,483424,0.9108,0.0016,0.6
+full,483424,0.9092,0.0,0.6
+no_weight_decay,483424,0.9086,-0.0006,0.6
+no_shortcut,483424,0.9062,-0.003,0.6
+adamw_instead_sgd,483424,0.9056,-0.0036,0.6
+no_augmentation,483424,0.8744,-0.0348,0.6

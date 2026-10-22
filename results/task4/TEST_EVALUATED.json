@@ -1,0 +1,20 @@
+{
+  "selected_run": "flip_crop_only",
+  "params": 483424,
+  "val_acc": 0.9112,
+  "test_acc": 0.9077,
+  "test_loss": 0.34781077575683594,
+  "cfg": {
+    "shortcut": true,
+    "aug": [
+      "flip",
+      "crop"
+    ],
+    "cutout_size": 8,
+    "opt": "sgd",
+    "lr": 0.1,
+    "wd": 0.0005,
+    "label_smoothing": 0.1,
+    "bs": 256
+  }
+}
