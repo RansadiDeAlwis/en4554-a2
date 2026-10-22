@@ -1,0 +1,10 @@
+optimizer,lr,final_val_acc,best_val_acc,diverged
+SGD,0.01,0.6192,0.6192,False
+SGD,0.05,0.7502,0.7502,False
+SGD,0.2,0.7346,0.7346,False
+SGD+momentum,0.001,0.6274,0.6274,False
+SGD+momentum,0.01,0.7432,0.7538,False
+SGD+momentum,0.05,0.6772,0.7288,False
+Adam,0.0001,0.6656,0.679,False
+Adam,0.001,0.7476,0.7566,False
+Adam,0.01,0.0942,0.1064,False

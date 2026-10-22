@@ -1,0 +1,7 @@
+config,max_abs_param_diff,allclose
+SGD (plain),0.0,True
+SGD momentum 0.9,0.0,True
+SGD momentum 0.9 + wd,0.0,True
+SGD Nesterov 0.9,0.0,True
+Adam lr=1e-3,1.1102230246251565e-16,True
+"Adam betas=(0.8,0.99) + wd",1.1102230246251565e-16,True
